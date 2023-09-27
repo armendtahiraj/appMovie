@@ -1,0 +1,47 @@
+<h1>Results for : {{movieTitle}}</h1>>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Cover</th>
+      <th scope="col">Title</th>
+      <th scope="col">Description</th>
+      <th scope="col">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td><img src="../../../assets/images/card.jpg" style="max-width: 120px;" alt="cover"></td>
+      <td>The Wheel of Time</td>
+      <td>Season 2</td>
+      <td><a class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">Trailer</a><a class="btn btn-success">Deatails</a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <iframe
+        width="100%"
+        height="315"
+        src="https://www.youtube.com/embed/yK7vHCfswok?si=oKs8nr4VRdYolulT"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+      </div>
+      <div class="modal-footer jsutify-content-center">
+        <b>Trailer for {{movieTitle}}</b>
+      </div>
+    </div>
+  </div>
+</div>
+
