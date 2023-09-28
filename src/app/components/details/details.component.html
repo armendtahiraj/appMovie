@@ -50,7 +50,7 @@
       </div>
     </div>
   </div>
-  <p>tis is the placeholder</p>
+  <p>this is the placeholder</p>
 </div>
 <hr>
 <br>
@@ -59,8 +59,9 @@
   <div class="col-md-12 text-center">
     <app-movie-details-actors></app-movie-details-actors>
   </div>
+  <br>
   <div class="text-center">
-    <a class="btn btn-warning">See all actors</a>
+    <a class="btn btn-warning" [routerLink]="['/details/actors/'+movieId]">See all actors</a>
   </div>
 </div>
 <hr>
@@ -71,8 +72,9 @@
   <div class="col-md-12">
     <app-details-reviews></app-details-reviews>
   </div>
+  <br>
   <div class="text-center">
-    <a class="btn btn-warning">See all reviews</a>
+    <a class="btn btn-warning" [routerLink]="['/details/reviews/'+movieId]">See all reviews</a>
   </div>
 </div>
 <hr>
@@ -84,7 +86,7 @@
     <app-details-movies></app-details-movies>
   </div>
   <div class="text-center">
-    <a class="btn btn-warning">See all movies</a>
+    <a class="btn btn-warning" [routerLink]="['/movie-details/'+movieId]">See all movies</a>
   </div>
 </div>
 

@@ -14,6 +14,8 @@ import { SearchComponent } from './components/search/search.component';
 import { LoaderComponent } from './components/loader/loader.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { MovieDetailsActorsComponent } from './components/movie-details-actors/movie-details-actors.component';
+import { FormsModule } from '@angular/forms';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { MovieDetailsActorsComponent } from './components/movie-details-actors/m
     SearchComponent,
     LoaderComponent,
     ModalComponent,
-    MovieDetailsActorsComponent
+    MovieDetailsActorsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
